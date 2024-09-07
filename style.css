@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: seagreen;
+}
+
+.carousel {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.list-img-info {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.item {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Green Dragon */
+.item.green-dragon {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+/* Red Dragon */
+.item.red-dragon {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Yellow Dragon */
+.item.yellow-dragon {
+    background-color: rgba(255, 255, 0, 0.7);
+}
+
+/* Pink Dragon */
+.item.pink-dragon {
+    background-color: rgba(255, 105, 180, 0.7);
+}
+
+.dragon-image {
+    width: 500px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: contain;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 650px;
+    height: 250px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.info .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.info .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navigation span:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
